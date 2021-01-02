@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb On/Off</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script>
+        function light(value) {
+            var pic;
+            if (value == 0) {
+                pic = "of.jpg";
+            }
+            else {
+                pic = "on.jpg";
+            }
+            document.getElementById('bulb').src = pic;
+        }
+    </script>
+
+
+    <img id="bulb" src="of.jpg">
+
+    <br>
+    <button onclick="light(1)">Turn ON</button>
+    <button onclick="light(0)">Turn OF</button>
+
+</body>
+
+</html>
